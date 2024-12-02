@@ -1,0 +1,149 @@
+.custom-border {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+  .custom-border::before {
+    content: '';
+    position: absolute;
+    top: -2px; /* adjust as necessary */
+    left: -2px; /* adjust as necessary */
+    width: calc(100% + 4px); /* adjust as necessary */
+    height: calc(100% + 4px); /* adjust as necessary */
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #60A5FA, #7C3AED) 1;
+    border-radius: 0.5rem;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  }
+
+  .slanted-border {
+    width: 300px; /* Adjust to your image or container size */
+    height: 150px; /* Adjust to your image or container size */
+    background-color: #131337; /* Set your background color */
+    border-radius: 0 20px 20px 20px; /* Rounded corners except top-left */
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%); /* Slant the top-left corner */
+    padding: 20px; /* Optional: Adjust padding for content */
+    color: white; /* Text color */
+    position: relative;
+  }
+
+  .gradient-border {
+    width: 300px; /* Adjust to your image or container size */
+    height: 150px; /* Adjust to your image or container size */
+    border: 2px solid; /* Border thickness */
+    border-image-source: linear-gradient(89.25deg, rgba(9, 14, 219, 0.66) 11.84%, rgba(231, 61, 196, 0.66) 101.57%);
+    border-image-slice: 1;
+    display: inline-block;
+    padding: 4px; /* Optional: Spacing between border and content */
+    box-sizing: border-box;
+  }
+  
+  .slanted-border-content {
+    width: 100%;
+    height: 100%;
+    border: 2px solid; /* Border thickness */
+    border-image-source: linear-gradient(89.25deg, rgba(9, 14, 219, 0.66) 11.84%, rgba(231, 61, 196, 0.66) 101.57%);
+    border-image-slice: 1;    border-radius: 0 20px 20px 20px; /* Rounded corners except top-left */
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%); /* Slant the top-left corner */
+    padding: 20px; /* Adjust padding for content */
+    color: white; /* Text color */
+    position: relative;
+  }
+
+ /*  .gradientInnerService-border {
+    border-image-source: linear-gradient(90deg, #E73DC4 0%, #090EDB 100%);
+    border-image-slice: 1;
+    border-width: 2px; 
+    border-style: solid;
+    border-radius: 20px; 
+  } */
+
+  .gradientInnerService-border {
+    position: relative;
+    background: linear-gradient(90deg, #E73DC4 0%, #090EDB 100%);
+    border-radius: 20px; /* Rounded corners for the outer gradient */
+    overflow: hidden; /* Ensure inner content doesn't overflow the border radius */
+  }
+  
+  .gradientInnerService-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000; /* Background color for the inner content area */
+    border-radius: 18px; /* Adjusted to match the outer border-radius */
+    z-index: 1;
+    margin: 2px; /* Adds space between the border and the inner content */
+  }
+  
+  .gradientInnerService-border > * {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the inner background */
+  }
+  
+
+/*   .card-wrapper {
+    width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+  } */
+
+/*   .slanted-borderCards {
+    width: 280px;
+    border: 2px solid; 
+    border-image-source: linear-gradient(89.25deg, rgba(9, 14, 219, 0.66) 11.84%, rgba(231, 61, 196, 0.66) 101.57%);
+    border-image-slice: 1;    
+    border-radius: 0 20px 20px 20px; 
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    padding: 20px 0px 20px 20px; 
+    position: relative;
+  } */
+
+  .border-wrapper {
+    position: relative;
+    padding: 2px; /* Adjust according to border thickness */
+    border-radius: 0px 6px 6px 6px; /* Match the inner border radius */
+    background: linear-gradient(89.25deg, #3a8bf1 11.84%, #025043 101.57%);
+    clip-path: polygon(19% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 19%); /* Slant the top-left corner */
+
+  }
+  
+  .slanted-borderCards {
+    background-color: #0E0C15; /* Inner background color */
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%); /* Slant the top-left corner */
+    border-radius: 0px 6px 6px 6px; /* Rounded corners except top-left */
+    padding-left: 20px; /* Adjust padding for content */
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .text-content p {
+    margin: 0;
+  }
+  
+  .border-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px 4px 4px 4px; /* Match this with the outer border-wrapper's border-radius */
+    z-index: -1;
+    /* background: linear-gradient(105.29deg, #0E0C15 19.16%, rgba(14, 12, 21, 0) 122.84%);
+    clip-path: polygon(20% 2px, calc(20% + 2px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(20% + 2px), 2px 20%); */
+  }
+  
+  
+  
+  

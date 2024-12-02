@@ -1,0 +1,38 @@
+<svg width="430" height="1284" viewBox="0 0 430 1284" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.05" cx="187.176" cy="683.845" r="530.719" stroke="#CAC6DD"/>
+<circle opacity="0.1" cx="187.175" cy="683.845" r="448.141" stroke="#CAC6DD"/>
+<circle opacity="0.1" cx="187.175" cy="683.845" r="349.389" stroke="#CAC6DD"/>
+<circle opacity="0.1" cx="187.176" cy="683.845" r="245.529" stroke="#CAC6DD"/>
+<g opacity="0.5" clip-path="url(#clip0_1428_4203)" filter="url(#filter0_f_1428_4203)">
+<path d="M572.82 256.978H-197.617V1027.42H572.82V256.978Z" fill="black"/>
+<path d="M572.82 256.978H-197.617V1027.42H572.82V256.978Z" fill="#907CFF" fill-opacity="0.387813"/>
+<mask id="mask0_1428_4203" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-198" y="256" width="771" height="772">
+<path d="M572.82 256.978H-197.617V1027.42H572.82V256.978Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1428_4203)">
+<g opacity="0.6">
+<g filter="url(#filter1_f_1428_4203)">
+<path d="M453.402 386.508H-148.502V864.66H453.402V386.508Z" fill="#0E35E3"/>
+<path d="M538.632 283.462H2.21484V695.164H538.632V283.462Z" fill="#DA24BB"/>
+<path d="M752.91 328.244H158.71V779.431H752.91V328.244Z" fill="#DA24BB"/>
+<path d="M490.961 627.751H68.665V1029.34H490.961V627.751Z" fill="#0E35E3"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1428_4203" x="-453.617" y="0.978027" width="1282.44" height="1282.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="128" result="effect1_foregroundBlur_1428_4203"/>
+</filter>
+<filter id="filter1_f_1428_4203" x="-431.314" y="0.649414" width="1467.04" height="1311.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="141.406" result="effect1_foregroundBlur_1428_4203"/>
+</filter>
+<clipPath id="clip0_1428_4203">
+<rect width="770.437" height="770.437" fill="white" transform="translate(-197.617 256.978)"/>
+</clipPath>
+</defs>
+</svg>

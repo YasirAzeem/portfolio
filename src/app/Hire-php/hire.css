@@ -1,0 +1,21 @@
+.hirepageclass {
+  background-image: url("/img/portfolioinnerbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.table-container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.row_header {
+  padding: 5px;
+  width: 200px;
+  background-color: rgb(133, 139, 139);
+}

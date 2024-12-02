@@ -1,0 +1,75 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9); /* Solid dark background for the header */
+  color: #fff;
+  padding: 0 2rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  background: #153533 ; /* Semi-transparent background */
+  backdrop-filter: blur(15px); /* Blur for the glass effect */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #105752 ;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  /* From https://css.glass */
+}
+
+.navbar:hover {
+  background: rgba(255, 255, 255, 0.25); /* Slightly more opaque on hover */
+  box-shadow: inset 0 6px 8px rgba(255, 255, 255, 0.25),
+    inset 0 -6px 8px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__link {
+    font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 3.5rem; */
+  width: 9rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px; /* Transparent on links */
+  border-radius: 10px;
+  transition: background 0.4s ease, transform 0.4s ease;
+}
+/* 
+.navbar__link:hover {
+  background: rgba(255, 255, 255, 0.3); 
+  transform: translateY(-4px);
+} */
+
+.navbar__link svg {
+  stroke-width: 1.5px;
+  transition: stroke 0.4s ease;
+}
+
+.navbar__link:hover svg {
+  stroke: #00e5ff; /* Neon-like accent for icons */
+}
